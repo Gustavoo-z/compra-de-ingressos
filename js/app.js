@@ -2,7 +2,7 @@ function comprar() {
     let ingresso = document.getElementById('tipo-ingresso').value;
     let quantidade = document.getElementById('qtd').value;
         if(quantidade <= 0 || quantidade > 10) {
-            alert('Por favor digite uma quantidade válida!');
+            alert('Por favor digite uma quantidade válida entre 1 e 10!');
         } else {
             let pista = parseInt(document.getElementsByClassName('lista')[0].getElementsByTagName('li')[0].textContent.split('Pista')[1]);
 
